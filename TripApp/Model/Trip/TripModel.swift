@@ -9,13 +9,13 @@
 import Foundation
 
 class TripModel {
-    var id: String!
+    let id: UUID
     //Exclamation means that it's required
     var title: String!
     
     init(title: String) {
-        //UUID creates a unique identifier of a string type
-        id = UUID( ).uuidString
+        //UUID creates a unique identifier 
+        id = UUID( )
         //self points to the original title, and not the parameter defined in init.
         self.title = title
     }
