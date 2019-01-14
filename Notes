@@ -2,3 +2,4 @@ Learn more about Escaping & Closures
 Learn more about Threads
 Learn more about Weak and Strong references
 Learn about dequeing cells, etc
+Learn more about Extensions - Add New functionality to an existing class. For example: UIButton + Extension UIButton CornerRadius

@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		603B55DF21EBD26600E430AB /* Notes in Resources */ = {isa = PBXBuildFile; fileRef = 603B55DE21EBD26600E430AB /* Notes */; };
+		603B55E121EBE0F200E430AB /* TripsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603B55E021EBE0F200E430AB /* TripsTableViewCell.swift */; };
+		603B55E421EBF8A000E430AB /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603B55E321EBF8A000E430AB /* UIViewExtensions.swift */; };
+		603B55E721EBFBBD00E430AB /* Themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603B55E621EBFBBD00E430AB /* Themes.swift */; };
+		603B55EF21EBFC5700E430AB /* Heebo-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 603B55E821EBFC5700E430AB /* Heebo-Black.ttf */; };
+		603B55F021EBFC5700E430AB /* Heebo-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 603B55E921EBFC5700E430AB /* Heebo-ExtraBold.ttf */; };
+		603B55F121EBFC5700E430AB /* Heebo-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 603B55EA21EBFC5700E430AB /* Heebo-Thin.ttf */; };
+		603B55F221EBFC5700E430AB /* Heebo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 603B55EB21EBFC5700E430AB /* Heebo-Regular.ttf */; };
+		603B55F321EBFC5700E430AB /* Heebo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 603B55EC21EBFC5700E430AB /* Heebo-Bold.ttf */; };
+		603B55F421EBFC5700E430AB /* Heebo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 603B55ED21EBFC5700E430AB /* Heebo-Light.ttf */; };
+		603B55F521EBFC5700E430AB /* Heebo-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 603B55EE21EBFC5700E430AB /* Heebo-Medium.ttf */; };
 		606ACEA521D3069500CB0FDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606ACEA421D3069500CB0FDB /* AppDelegate.swift */; };
 		606ACEA721D3069500CB0FDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606ACEA621D3069500CB0FDB /* ViewController.swift */; };
 		606ACEAA21D3069500CB0FDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 606ACEA821D3069500CB0FDB /* Main.storyboard */; };
@@ -22,6 +32,16 @@
 
 /* Begin PBXFileReference section */
 		603B55DE21EBD26600E430AB /* Notes */ = {isa = PBXFileReference; lastKnownFileType = text; path = Notes; sourceTree = "<group>"; };
+		603B55E021EBE0F200E430AB /* TripsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsTableViewCell.swift; sourceTree = "<group>"; };
+		603B55E321EBF8A000E430AB /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		603B55E621EBFBBD00E430AB /* Themes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Themes.swift; sourceTree = "<group>"; };
+		603B55E821EBFC5700E430AB /* Heebo-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Heebo-Black.ttf"; sourceTree = "<group>"; };
+		603B55E921EBFC5700E430AB /* Heebo-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Heebo-ExtraBold.ttf"; sourceTree = "<group>"; };
+		603B55EA21EBFC5700E430AB /* Heebo-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Heebo-Thin.ttf"; sourceTree = "<group>"; };
+		603B55EB21EBFC5700E430AB /* Heebo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Heebo-Regular.ttf"; sourceTree = "<group>"; };
+		603B55EC21EBFC5700E430AB /* Heebo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Heebo-Bold.ttf"; sourceTree = "<group>"; };
+		603B55ED21EBFC5700E430AB /* Heebo-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Heebo-Light.ttf"; sourceTree = "<group>"; };
+		603B55EE21EBFC5700E430AB /* Heebo-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Heebo-Medium.ttf"; sourceTree = "<group>"; };
 		606ACEA121D3069500CB0FDB /* TripApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		606ACEA421D3069500CB0FDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		606ACEA621D3069500CB0FDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +67,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		603B55E221EBF86600E430AB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				603B55E321EBF8A000E430AB /* UIViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		603B55E521EBFBB100E430AB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				603B55E821EBFC5700E430AB /* Heebo-Black.ttf */,
+				603B55EC21EBFC5700E430AB /* Heebo-Bold.ttf */,
+				603B55E921EBFC5700E430AB /* Heebo-ExtraBold.ttf */,
+				603B55ED21EBFC5700E430AB /* Heebo-Light.ttf */,
+				603B55EE21EBFC5700E430AB /* Heebo-Medium.ttf */,
+				603B55EB21EBFC5700E430AB /* Heebo-Regular.ttf */,
+				603B55EA21EBFC5700E430AB /* Heebo-Thin.ttf */,
+				603B55E621EBFBBD00E430AB /* Themes.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		606ACE9821D3069500CB0FDB = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				606ACEA421D3069500CB0FDB /* AppDelegate.swift */,
+				603B55E521EBFBB100E430AB /* Resources */,
+				603B55E221EBF86600E430AB /* Extensions */,
 				606ACEB621D4502400CB0FDB /* Model */,
 				60BACF1B21D4616E0098B441 /* Views */,
 				606ACEAB21D3069500CB0FDB /* Assets.xcassets */,
@@ -110,6 +155,7 @@
 			children = (
 				60BACF1D21D462740098B441 /* TripsViewController.storyboard */,
 				60BACF1F21D4629D0098B441 /* TripsViewController.swift */,
+				603B55E021EBE0F200E430AB /* TripsTableViewCell.swift */,
 			);
 			path = TripsViewController;
 			sourceTree = "<group>";
@@ -172,9 +218,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				603B55EF21EBFC5700E430AB /* Heebo-Black.ttf in Resources */,
 				606ACEAF21D3069500CB0FDB /* LaunchScreen.storyboard in Resources */,
+				603B55F021EBFC5700E430AB /* Heebo-ExtraBold.ttf in Resources */,
+				603B55F421EBFC5700E430AB /* Heebo-Light.ttf in Resources */,
 				603B55DF21EBD26600E430AB /* Notes in Resources */,
+				603B55F221EBFC5700E430AB /* Heebo-Regular.ttf in Resources */,
 				606ACEAC21D3069500CB0FDB /* Assets.xcassets in Resources */,
+				603B55F121EBFC5700E430AB /* Heebo-Thin.ttf in Resources */,
+				603B55F321EBFC5700E430AB /* Heebo-Bold.ttf in Resources */,
+				603B55F521EBFC5700E430AB /* Heebo-Medium.ttf in Resources */,
 				60BACF1E21D462740098B441 /* TripsViewController.storyboard in Resources */,
 				606ACEAA21D3069500CB0FDB /* Main.storyboard in Resources */,
 			);
@@ -189,9 +242,12 @@
 			files = (
 				606ACEA721D3069500CB0FDB /* ViewController.swift in Sources */,
 				60BACF1A21D453590098B441 /* Data.swift in Sources */,
+				603B55E421EBF8A000E430AB /* UIViewExtensions.swift in Sources */,
 				606ACEA521D3069500CB0FDB /* AppDelegate.swift in Sources */,
+				603B55E721EBFBBD00E430AB /* Themes.swift in Sources */,
 				60BACF2021D4629D0098B441 /* TripsViewController.swift in Sources */,
 				60BACF1821D450A00098B441 /* TripFunctions.swift in Sources */,
+				603B55E121EBE0F200E430AB /* TripsTableViewCell.swift in Sources */,
 				60BACF1621D4508F0098B441 /* TripModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

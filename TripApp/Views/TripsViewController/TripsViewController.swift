@@ -10,8 +10,7 @@ import Foundation
 
 import UIKit
 //TripsViewController delegates to yableview on Data to pass
-class TripsViewController: UIViewController, UITableViewDataSource {
-    
+class TripsViewController: UIViewController {
     
     @IBOutlet weak var tableview: UITableView!
     
@@ -19,26 +18,32 @@ class TripsViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad( )
         
         tableview.dataSource = self
-        
-        //changing from strong to weak reference
+        tableview.delegate = self
+
         TripFunctions.readTrips (completion: {  [ weak self] in
             self?.tableview.reloadData( )
         } )
     }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Data.tripModels.count
-    }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = tableview.dequeueReusableCell(withIdentifier: "cell")
-        //you use an ! instead of a ? for an optional when you're certain it has a value
-        if cell == nil {
-            cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "cell")
-        }
-        
-        cell!.textLabel?.text = Data.tripModels[indexPath.row].title
-        
-        return cell!
-    }
 }
+
+extension TripsViewController: UITableViewDataSource, UITableViewDelegate {
+    
+        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            return Data.tripModels.count
+        }
+
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! TripsTableViewCell
+            
+            cell.setup(tripModel: Data.tripModels[indexPath.row])
+            
+            return cell
+        }
+
+        func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+            return 160
+        }
+}
+
+
 
