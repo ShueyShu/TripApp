@@ -17,9 +17,10 @@ class TripFunctions {
         //Populates the tableview if there is no localized data. We don't know how long it's going to take to get the local data, so we execute this on a background thread.
         DispatchQueue.global(qos: .userInteractive).async {
             if Data.tripModels.count == 0 {
-                Data.tripModels.append(TripModel(title: "Trip to Bali"))
-                Data.tripModels.append(TripModel(title: "Trip to Mexico City"))
-                Data.tripModels.append(TripModel(title: "Trip to Kyoto"))
+                Data.tripModels.append(TripModel(title: "Trip to New Delhi"))
+                Data.tripModels.append(TripModel(title: "Trip to Kerala"))
+                Data.tripModels.append(TripModel(title: "Trip to Paris"))
+                Data.tripModels.append(TripModel(title: "Trip to London"))
                 Data.tripModels.append(TripModel(title: "Trip to Boulder"))
             }
             //placed here so it executes, right after it gets the data. If its outside the bracket, it exectures after

@@ -10,9 +10,13 @@ import UIKit
 
 extension UIView {
     func addShadowandRoundedCorners ( ) {
-        layer.shadowOpacity = 1
-        layer.shadowOffset = CGSize.zero
-        layer.shadowColor = UIColor.darkGray.cgColor
+//        layer.shadowOffset = CGSize.zero
+//        layer.shadowColor = UIColor.darkGray.cgColor
         layer.cornerRadius = 6
+        
+        
+        layer.shadowOpacity = 0.2
+        layer.shadowRadius = 2
+        layer.shadowOffset = CGSize(width: 0, height: 4)
     }
 }

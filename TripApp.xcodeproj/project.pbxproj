@@ -18,6 +18,8 @@
 		603B55F321EBFC5700E430AB /* Heebo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 603B55EC21EBFC5700E430AB /* Heebo-Bold.ttf */; };
 		603B55F421EBFC5700E430AB /* Heebo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 603B55ED21EBFC5700E430AB /* Heebo-Light.ttf */; };
 		603B55F521EBFC5700E430AB /* Heebo-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 603B55EE21EBFC5700E430AB /* Heebo-Medium.ttf */; };
+		603B55F721EC271000E430AB /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 603B55F621EC271000E430AB /* Colors.xcassets */; };
+		603B55FC21EC34FE00E430AB /* FloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603B55FB21EC34FE00E430AB /* FloatingActionButton.swift */; };
 		606ACEA521D3069500CB0FDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606ACEA421D3069500CB0FDB /* AppDelegate.swift */; };
 		606ACEA721D3069500CB0FDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606ACEA621D3069500CB0FDB /* ViewController.swift */; };
 		606ACEAA21D3069500CB0FDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 606ACEA821D3069500CB0FDB /* Main.storyboard */; };
@@ -42,6 +44,8 @@
 		603B55EC21EBFC5700E430AB /* Heebo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Heebo-Bold.ttf"; sourceTree = "<group>"; };
 		603B55ED21EBFC5700E430AB /* Heebo-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Heebo-Light.ttf"; sourceTree = "<group>"; };
 		603B55EE21EBFC5700E430AB /* Heebo-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Heebo-Medium.ttf"; sourceTree = "<group>"; };
+		603B55F621EC271000E430AB /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		603B55FB21EC34FE00E430AB /* FloatingActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingActionButton.swift; sourceTree = "<group>"; };
 		606ACEA121D3069500CB0FDB /* TripApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		606ACEA421D3069500CB0FDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		606ACEA621D3069500CB0FDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,11 +75,22 @@
 			isa = PBXGroup;
 			children = (
 				603B55E321EBF8A000E430AB /* UIViewExtensions.swift */,
+				603B55FB21EC34FE00E430AB /* FloatingActionButton.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
 		603B55E521EBFBB100E430AB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				603B55F821EC271D00E430AB /* Fonts */,
+				603B55E621EBFBBD00E430AB /* Themes.swift */,
+				603B55F621EC271000E430AB /* Colors.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		603B55F821EC271D00E430AB /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
 				603B55E821EBFC5700E430AB /* Heebo-Black.ttf */,
@@ -85,9 +100,8 @@
 				603B55EE21EBFC5700E430AB /* Heebo-Medium.ttf */,
 				603B55EB21EBFC5700E430AB /* Heebo-Regular.ttf */,
 				603B55EA21EBFC5700E430AB /* Heebo-Thin.ttf */,
-				603B55E621EBFBBD00E430AB /* Themes.swift */,
 			);
-			path = Resources;
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		606ACE9821D3069500CB0FDB = {
@@ -220,6 +234,7 @@
 			files = (
 				603B55EF21EBFC5700E430AB /* Heebo-Black.ttf in Resources */,
 				606ACEAF21D3069500CB0FDB /* LaunchScreen.storyboard in Resources */,
+				603B55F721EC271000E430AB /* Colors.xcassets in Resources */,
 				603B55F021EBFC5700E430AB /* Heebo-ExtraBold.ttf in Resources */,
 				603B55F421EBFC5700E430AB /* Heebo-Light.ttf in Resources */,
 				603B55DF21EBD26600E430AB /* Notes in Resources */,
@@ -248,6 +263,7 @@
 				60BACF2021D4629D0098B441 /* TripsViewController.swift in Sources */,
 				60BACF1821D450A00098B441 /* TripFunctions.swift in Sources */,
 				603B55E121EBE0F200E430AB /* TripsTableViewCell.swift in Sources */,
+				603B55FC21EC34FE00E430AB /* FloatingActionButton.swift in Sources */,
 				60BACF1621D4508F0098B441 /* TripModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,6 +411,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M58F7UG757;
 				INFOPLIST_FILE = TripApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -412,6 +429,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M58F7UG757;
 				INFOPLIST_FILE = TripApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -13,6 +13,7 @@ import UIKit
 class TripsViewController: UIViewController {
     
     @IBOutlet weak var tableview: UITableView!
+    @IBOutlet weak var addButton: FloatingActionButton!
     
     override func viewDidLoad() {
         super.viewDidLoad( )
@@ -23,6 +24,10 @@ class TripsViewController: UIViewController {
         TripFunctions.readTrips (completion: {  [ weak self] in
             self?.tableview.reloadData( )
         } )
+        
+        view.backgroundColor = Theme.background
+        
+//        addButton.createFloatingActionButton( )
     }
 }
 
